@@ -1,0 +1,35 @@
+﻿body {
+}
+
+.footerLinks {
+    color: #ffffff;
+    text-decoration: none !important;
+}
+
+    .footerLinks:hover {
+        color: #ffd800;
+    }
+
+    .footerLinks:hover {
+        cursor: pointer;
+    }
+
+
+
+#footer1 {
+    background: #762b00;
+}
+
+#footer2 {
+    background: #531f00;
+}
+.nav-link {
+    color: #ffffff;
+    text-decoration: underline;
+}
+    .nav-link:hover {
+        color: #ffd800;
+    }
+.nav-link:hover {
+    cursor: pointer;
+}

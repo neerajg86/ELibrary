@@ -1,0 +1,198 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="About.master.cs" Inherits="WebApplication1.About" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+     <%--bootstrap css--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <link href="fontawesome/css/all.css" rel="stylesheet" />
+
+    <%--our custom css--%>
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <%--jquery--%>
+    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap/js/jquery-3.5.1.slim.min.js"></script>
+
+    <%--Fontawesome js--%>
+    <script src="fontawesome/js/all.js"></script>
+
+    <%--Datatables js--%>
+    <script src="datatables/js/jquery.dataTables.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="bottomHeader">
+        <div class="container-fluid">
+        
+            <nav class="navbar navbar-dark navbar-expand-md" style="background-color:#004d80;">
+                <a class="navbar-brand" href="viewbook.aspx">
+                    <img src="img/books.png" width="30" />
+                    E-LIBRARY
+                </a>
+ 
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+ 
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link"  href="Home.aspx">Home</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="About.aspx">About Us</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Terms.aspx">Terms</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="Contact.aspx">Contact Us</a>
+                        </li>
+                        
+                  
+
+                    </ul>
+
+
+
+                        
+                        <ul class="navbar-nav">
+
+                            <li class="nav-item active">
+                            <a class="nav-link" href="Admin_login.aspx">Admin</a>
+                        </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link"  ID="LinkButton13" runat="server" OnClick="LinkButton13_Click">View Books</asp:LinkButton>
+                            </li>
+
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link"  ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">User Login</asp:LinkButton>
+                            </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link"  ID="LinkButton15" runat="server" OnClick="LinkButton15_Click">Sign Up</asp:LinkButton>
+                            </li>
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link"  ID="LinkButton16" runat="server" OnClick="LinkButton16_Click" Visible="False">Logout</asp:LinkButton>
+                            </li>
+
+                            <li class="nav-item active">
+                                <asp:LinkButton class="nav-link"  ID="LinkButton17" runat="server" OnClick="LinkButton17_Click" Visible="False">Hello user</asp:LinkButton>
+
+                            </li>
+                        </ul>
+                    
+                </div>
+ 
+ 
+            </nav>
+        </div>
+            </div>&nbsp
+        <!-- Main Content Placeholder -->
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+ 
+            </asp:ContentPlaceHolder>
+        </div>
+        <!-- Main Content Placeholder -->
+ 
+         <!-- Footer -->&nbsp
+        <footer class="full-footer">
+            <div id="footer1" class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 text-center">
+                        <p>
+                            <asp:LinkButton class="footerlinks " ID="LinkButton18" style="font-size:25px;" runat="server" OnClick="LinkButton18_Click">Admin Login</asp:LinkButton>
+                            &nbsp;&nbsp;
+                            <asp:LinkButton class="footerlinks " ID="LinkButton19" style="font-size:25px;" runat="server" OnClick="LinkButton19_Click" Visible="False">Author Management</asp:LinkButton>
+                            &nbsp;&nbsp;
+                            <asp:LinkButton class="footerlinks " ID="LinkButton20" style="font-size:25px;" runat="server" OnClick="LinkButton20_Click" Visible="False">Publisher Management</asp:LinkButton>
+                            &nbsp;&nbsp;
+                            <asp:LinkButton class="footerlinks " ID="LinkButton21" style="font-size:25px;" runat="server" OnClick="LinkButton21_Click" Visible="False">Book Inventory</asp:LinkButton>
+                            &nbsp;&nbsp;
+                            <asp:LinkButton class="footerlinks " ID="LinkButton22" style="font-size:25px;" runat="server" OnClick="LinkButton22_Click" Visible="False">Book Issuing</asp:LinkButton>
+                            &nbsp;&nbsp;
+            
+                             <asp:LinkButton class="footerlinks " ID="LinkButton23" style="font-size:25px;" runat="server" OnClick="LinkButton23_Click" Visible="False">Member Management</asp:LinkButton>&nbsp;&nbsp;
+                            <asp:LinkButton class="footerlinks " ID="LinkButton24" style="font-size:25px;" runat="server"  Visible="False" OnClick="LinkButton24_Click">Add Penalty</asp:LinkButton>
+                            
+                        </p>
+ 
+                    </div>
+ 
+                </div>
+            
+            </div>
+
+
+        
+       <div class="container top-footer p-md-3 p-1">
+      <div class="row">
+        <div class="col-md-3 pl-4 pr-4">
+          <img class="img-fluid" src="imgs/logo_text_white_small.png" alt="">
+          <p>
+            Students need higher-order skills for their future career success. We work with academic staff to include research...<a href="About.aspx">Read
+              more...</a>
+          </p>
+          <a style="color:silver;" class="p-1" href="#"><i class="fab fa-2x fa-facebook-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-google-plus-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-twitter-square"></i></a>
+          <a style="color: silver;" class="p-1" href="#"><i class="fab fa-2x fa-instagram"></i></a>
+        </div>
+
+        <div class="col-md-3  pl-4 pr-4">
+          <h3>Important Links</h3>
+          <a href="#">Privacy Policy</a><br>
+          <a href="#">Youtube Channel Link </a><br>
+          <a href="#">Blog Articles </a><br>
+          <a href="#">Social Media</a>
+        </div>
+
+        <div class="col-md-3  pl-4 pr-4">
+          <h3>Our Services</h3>
+          <a href="webdesigning.html">Web Designing </a><br>
+          <a href="webdevelopment.html">Web Development </a><br>
+          <a href="seoservices.html">SEO services </a><br>
+          <a href="softwaredevelopment.html">Software Development </a>
+          <a href="mobileapps.html">Mobile App Development </a>
+          <a href="graphicdesign.html">Graphic Designing</a>
+        </div>
+
+        <div class="col-md-3  pl-4 pr-4">
+          <h3>Contact Us</h3>
+          <a href="#"><i class="fas fa-phone"></i> +(91) 86524088841 </a><br>
+          <a href="mailto:simplesnippetsinfo@gmail.com  "><i class="fas fa-envelope"></i> neerajg8624@gmail.com </a><br>
+          <div class="embed-responsive embed-responsive-16by9">
+            
+              <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.7536758294004!2d73.1560059291431!3d19.238190965400854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be79422ccfe61bf%3A0x63f1619adcda8d3d!2sShaheed%20Dunichand%20Kalani%20College!5e0!3m2!1sen!2sin!4v1613372713937!5m2!1sen!2sin" frameborder="0"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid bottom-footer pt-2">
+      <div class="row">
+        <div class="col-12 text-center">
+          <p>Copyrights © 2021- All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+
+     </footer>
+
+
+
+
+        
+        <!-- ./Footer -->
+    </form>
+        
+            
+</body>
+</html>
