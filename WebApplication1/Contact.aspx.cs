@@ -24,9 +24,9 @@ namespace WebApplication1
         {
             try
             {
-                var from = "neerajg8624@gmail.com";
-                var to = " neerajg8624@gmail.com";
-                const string Password = "neeraj@@@@";
+                var from = "your email";
+                var to = " your email";
+                const string Password = "your password";
                 string mail_subject = txt_subject.Text.ToString();
                string mail_message = "from:" + txt_name.Text + "\n";
                 mail_message += "Email:" + txt_email.Text + "\n";
